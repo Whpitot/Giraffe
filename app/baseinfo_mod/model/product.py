@@ -13,6 +13,7 @@ class Product(BaseEntity, db.Model):
     category_id = db.Column(db.Integer)
     category_code = db.Column(db.String(30))
     category_name = db.Column(db.String(30))
+    brand = db.Column(db.String(50))
     item_no = db.Column(db.String(30))
     size = db.Column(db.String(10))
     unit = db.Column(db.String(10))

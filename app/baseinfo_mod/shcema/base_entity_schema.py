@@ -1,7 +1,9 @@
 from marshmallow import Schema, fields
 
 class BaseEntitySchema(Schema):
-    id = fields.Int(dump_only = True)  #dump_only 只能被serialization，而不能被deserialization
+    #dump_only 只能被serialization，而不能被deserialization
+    
+    id = fields.Int(dump_only = True)  
     creator = fields.Str()
     create_at = fields.DateTime()
     modifier = fields.Str()
